@@ -41,22 +41,45 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Running Locally
+
 1. Download the dataset from the provided Google Drive link
-2. Place the dataset files in the appropriate directory
-3. Run the main script:
+2. Place the dataset file `ACI-IoT.xlsx` in the project directory
+3. Modify the file path in the code:
+   - Open `network_anomaly_detection(genetic_algorithm).py`
+   - Replace the Google Drive path with your local path:
+   ```python
+   # Change this line:
+   file_path = '/content/drive/MyDrive/Network_Anomaly_Detection/ACI-IoT.xlsx'
+   # To:
+   file_path = 'ACI-IoT.xlsx'  # or the full path to your file
+   ```
+4. Remove or comment out the Google Colab specific code:
+   ```python
+   # Remove or comment these lines:
+   # from google.colab import drive
+   # drive.mount('/content/drive')
+   ```
+5. Run the script:
 ```bash
-python main.py
+python network_anomaly_detection\(genetic_algorithm\).py
 ```
+
+### Running in Google Colab
+
+1. Upload the code file to Google Colab
+2. Upload the dataset to your Google Drive
+3. Mount your Google Drive in Colab
+4. Run the code as is
 
 ## Project Structure
 
 ```
 Network_Anomaly_Detection/
 ├── data/                  # Directory for dataset files
-├── src/                   # Source code
+├── network_anomaly_detection(genetic_algorithm).py  # Main code file
 ├── requirements.txt       # Project dependencies
-├── README.md             # Project documentation
-└── main.py               # Main execution script
+└── README.md             # Project documentation
 ```
 
 ## Requirements
@@ -67,6 +90,8 @@ The project requires Python 3.7+ and the following main dependencies:
 - scikit-learn
 - matplotlib
 - seaborn
+- openpyxl
+- deap
 
 For a complete list of dependencies, please refer to the `requirements.txt` file.
 
