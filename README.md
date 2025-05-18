@@ -75,12 +75,7 @@ For a complete list of dependencies, please refer to the `requirements.txt` file
 If you use this code in your research, please cite our paper:
 
 ```
-@article{network_anomaly_detection,
-  title={Network Anomaly Detection},
-  author={Your Name},
-  journal={Journal Name},
-  year={2024}
-}
+https://doi.org/10.5281/zenodo.15412033
 ```
 
 ## License
