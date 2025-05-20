@@ -103,10 +103,6 @@ If you use this code in your research, please cite our paper:
 https://doi.org/10.5281/zenodo.15412033
 ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Contact
 
 For any questions or suggestions, please feel free to open an issue in this repository. 
